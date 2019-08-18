@@ -42,8 +42,8 @@
     - Unbalaced - To balance a BST we use AVL Tree or Red Black Tree<br>
     ![Balanced & Unbalanced](https://media.cheggcdn.com/media%2F039%2F039a5494-18d0-4e16-9496-f0313a1bc68e%2FphpRI9tlB.png)
 - Operation Cost    
-    |  | Average | Worst |
-    |--|--|--|
+    |        | Average | Worst |
+    |--------|---------|-------|
     | Lookup | O(logN) |  O(N) |
     | Insert | O(logN) |  O(N) |
     | Delete | O(logN) |  O(N) |
