@@ -31,15 +31,27 @@
     ![COMPLETE BINARY TREE](https://web.cecs.pdx.edu/~sheard/course/Cs163/Graphics/CompleteBinary.jpg)
 
 **BINARY SEARCH TREE**
-
-
-
-**PROS**
-- first
-- second
-- third
-
-**CONS**
-- first
-- second
-- third
+- A subset of Binary Tree
+- Maintains relationships between nodes like Folder Directory ( Root Folder - Sub Folder)
+- Lookup is extremely fast
+- Rules -
+    - All child nodes to the right of the root node must be > the current node & vice versa
+    - A node can have upto 2 children
+- Types -
+    - Balanced
+    - Unbalaced - To balance a BST we use AVL Tree or Red Black Tree<br>
+    ![Balanced & Unbalanced](https://media.cheggcdn.com/media%2F039%2F039a5494-18d0-4e16-9496-f0313a1bc68e%2FphpRI9tlB.png)
+- Operation Cost    
+    |  | Average | Worst |
+    |--|--|--|
+    | Lookup | O(logN) |  O(N) |
+    | Insert | O(logN) |  O(N) |
+    | Delete | O(logN) |  O(N) |
+- [Visualization](https://visualgo.net/bn/bst?slide=1)
+- PROS -
+    - Better than O(n)
+    - Ordered - Ordering of keys stored in the tree. Any time we need to traverse the increasing (or decreasing) order of keys, we just need to do the in-order (and reverse in-order) traversal on the tree.
+    - Flexible in size
+- CONS -
+    - No O(1) operation
+    - Always have to implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree otherwise the cost of operations may not be logarithmic and degenerate into a linear search on an array.
