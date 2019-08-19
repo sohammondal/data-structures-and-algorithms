@@ -45,15 +45,15 @@ class BinarySearchTree {
 
   lookup(value: number) {
     let currentNode: any = this.root;
-    if (currentNode) {
-      while (true) {
+    if (currentNode && value) {
+      while (currentNode) {
         if (value > currentNode.value) {
           //right
           currentNode = currentNode.right;
         } else if (value < currentNode.value) {
           //left
           currentNode = currentNode.left;
-        } else {
+        } else if (value === currentNode.value) {
           //equal
           return currentNode;
         }
