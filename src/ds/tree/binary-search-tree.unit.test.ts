@@ -70,3 +70,13 @@ test("is lookup(20) working", () => {
     })
   );
 });
+
+test("is lookup(null) working", () => {
+  const node = bst.lookup(null);
+  expect(node).toBe(null);
+});
+
+test("is lookup(-1) working", () => {
+  const node = bst.lookup(-1);
+  expect(node).toBe(null);
+});
