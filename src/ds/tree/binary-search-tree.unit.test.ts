@@ -40,3 +40,33 @@ test(`is a tree strcuture made with following strcuture --
     })
   );
 });
+
+test("is 1 lookup working", () => {
+  const node = bst.lookup(1);
+  expect(JSON.stringify(node)).toBe(
+    JSON.stringify({
+      value: 1,
+      left: null,
+      right: null
+    })
+  );
+});
+
+test("is 20 lookup working", () => {
+  const node = bst.lookup(20);
+  expect(JSON.stringify(node)).toBe(
+    JSON.stringify({
+      value: 20,
+      left: {
+        value: 15,
+        left: null,
+        right: null
+      },
+      right: {
+        value: 170,
+        left: null,
+        right: null
+      }
+    })
+  );
+});
