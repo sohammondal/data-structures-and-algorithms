@@ -5,6 +5,7 @@
   "main": "index.js",
   "jest": true,
   "scripts": {
+    "start": "tsc -b tsconfig.json -w .",
     "test": "jest --watch"
   },
   "keywords": [
