@@ -6,14 +6,14 @@ test("is instance of Binary Search Tree", () => {
   expect(bst).toBeInstanceOf(BinarySearchTree);
 });
 
-test("is node with value 9 inserted to empty tree", () => {
+test("is insert(9) working on empty tree", () => {
   bst.insert(9);
   expect(JSON.stringify(traverse(bst.root))).toBe(
     JSON.stringify({ value: 9, left: null, right: null })
   );
 });
 
-test(`is a tree strcuture made with following strcuture --
+test(`is a tree made with following strcuture --
                       9
                   4       20
                 1   6  15   170
@@ -41,7 +41,7 @@ test(`is a tree strcuture made with following strcuture --
   );
 });
 
-test("is 1 lookup working", () => {
+test("is lookup(1) working", () => {
   const node = bst.lookup(1);
   expect(JSON.stringify(node)).toBe(
     JSON.stringify({
@@ -52,7 +52,7 @@ test("is 1 lookup working", () => {
   );
 });
 
-test("is 20 lookup working", () => {
+test("is lookup(20) working", () => {
   const node = bst.lookup(20);
   expect(JSON.stringify(node)).toBe(
     JSON.stringify({
