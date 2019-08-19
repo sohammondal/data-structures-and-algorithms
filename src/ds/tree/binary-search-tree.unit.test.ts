@@ -1,6 +1,13 @@
-import { BinarySearchTree, traverse } from "./binary-search-tree";
+import { BinarySearchTree } from "./binary-search-tree";
 
 const bst = new BinarySearchTree();
+
+const traverse = node => {
+  const tree = { value: node.value, left: null, right: null };
+  tree.left = node.left === null ? null : traverse(node.left);
+  tree.right = node.right === null ? null : traverse(node.right);
+  return tree;
+};
 
 test("is instance of Binary Search Tree", () => {
   expect(bst).toBeInstanceOf(BinarySearchTree);

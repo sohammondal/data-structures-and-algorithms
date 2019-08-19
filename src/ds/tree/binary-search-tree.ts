@@ -61,13 +61,12 @@ class BinarySearchTree {
     }
     return null;
   }
+
+  remove(value: number) {
+    let currentNode = this.root;
+    if (currentNode && this.lookup(value).value === value) {
+    }
+  }
 }
 
-const traverse = node => {
-  const tree = { value: node.value, left: null, right: null };
-  tree.left = node.left === null ? null : traverse(node.left);
-  tree.right = node.right === null ? null : traverse(node.right);
-  return tree;
-};
-
-export { BinarySearchTree, traverse };
+export { BinarySearchTree };
