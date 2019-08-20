@@ -5,7 +5,6 @@
 - Chess Games (before ML) used Tree DS to make decisions
 - [Abstract Syntax Tree](https://www.researchgate.net/profile/Peter_Fritzson/publication/228792639/figure/fig1/AS:393782852898820@1470896556105/Abstract-syntax-tree-of-the-while-loop.png)
 - Comments on Facebook
-- Linked List - a type of Tree DS but with linear path
 
 ## TYPES
 
@@ -38,7 +37,10 @@
     - All child nodes to the right of the root node must be > the current node & vice versa
     - A node can have upto 2 children
 - Types -
-    - Balanced
+    - Balanced -
+        - AVL Tree - [Visualization](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html) & [Notes](https://medium.com/basecs/the-little-avl-tree-that-could-86a3cae410c7)
+        - Red Black Tree - [Visualization](https://www.cs.usfca.edu/~galles/visualization/RedBlack.html) & [Notes](https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5)
+        - [Comparison](https://stackoverflow.com/questions/13852870/red-black-tree-over-avl-tree)
     - Unbalaced - To balance a BST we use AVL Tree or Red Black Tree<br>
     ![Balanced & Unbalanced](https://media.cheggcdn.com/media%2F039%2F039a5494-18d0-4e16-9496-f0313a1bc68e%2FphpRI9tlB.png)
 - Operation Cost
@@ -57,3 +59,39 @@
 - CONS -
     - No O(1) operation
     - Always have to implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree otherwise the cost of operations may not be logarithmic and degenerate into a linear search on an array.
+
+**BINARY HEAPS**
+- Every child node has a parent of greater priority (or value)
+- Can we used in any algorithm where ordering is important
+- Good for compariting items
+- Left to right insertion
+- [Visualization](https://visualgo.net/en/heap)
+- Types -
+    - Max Heap
+    - Min Heap<br>
+    ![MAX & MIN HEAP](https://i2.wp.com/www.techiedelight.com/wp-content/uploads/2016/11/Min-Max-Heap.png?zoom=2.625&resize=368%2C214&ssl=1)
+- Implementation -
+    - Priority Queue
+
+- Operation Cost
+
+    |        |         |
+    |--------|---------|
+    | Lookup | O(N)    | 
+    | Insert | O(logN) |
+    | Delete | O(logN) |
+
+- PROS -
+    - Better than O(n)
+    - Priority
+    - Flexible in size
+    - Fast Insert
+- CONS -
+    - Slow Lookup
+
+**Trie (aka Prefix Tree)**
+- Can have more than 2 child nodes
+- Specialized tree used for searching using strings
+- Implementation - Auto Completion, IP Routing, Searching through a dictionary
+- O(Lenght of the word being searched)<br>
+![Trie](https://i2.wp.com/www.techiedelight.com/wp-content/uploads/2016/11/Trie.png?fit=327%2C528&ssl=1)
