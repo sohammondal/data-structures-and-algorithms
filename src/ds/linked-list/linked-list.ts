@@ -16,7 +16,7 @@ export class LinkedList {
         this.length = 1;
     }
 
-    returnList() {
+    show() {
         let list = [], temp = this.head;
         while (temp) {
             list.push(temp.value);
@@ -25,12 +25,51 @@ export class LinkedList {
         return list;
     }
 
-    append(value: string | number) {
-        const newNode = new _Node(value);
-        this.tail.next = newNode;
-        this.tail = newNode;
-        this.length++;
-        return this;
+    traverseToIndex(index: number) {
+        let node = this.head;
+        for (let i = 0; i <= index; i++) {
+            node = node.next;
+        }
+        return node;
     }
 
+    append(value: string | number) {
+        if (value) {
+            const newNode = new _Node(value);
+            this.tail.next = newNode;
+            this.tail = newNode;
+            this.length++;
+            return this;
+        }
+        return null;
+    }
+
+    prepend(value: string | number) {
+        if (value) {
+            const newNode = new _Node(value);
+            newNode.next = this.head;
+            this.head = newNode;
+            this.length++;
+            return this;
+        }
+        return null;
+    }
+
+    insert(index: number, value: string | number) {
+        if (index && value) {
+            let newNode = new _Node(value);
+            if (index > this.length) {
+                this.append(value);
+            } else {
+                let prev = this.traverseToIndex(index - 1);
+                newNode.next = prev.next;
+                prev.next = newNode;
+                this.length++;
+            }
+            return this;
+        } else {
+            if (index) throw new Error('Value cannot null/undefinded');
+            if (value) throw new Error('Index cannot null/undefinded');
+        }
+    }
 }
