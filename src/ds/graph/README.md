@@ -15,23 +15,23 @@
 - Direction
   - Directed
     - In Twitter, one can follow a person but that person may not follow back.<br>
-  <img src="http://urily.sohammondal.com/ef3IHZ7oX" height="60" weight="60">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Directed.svg" height="60" weight="60">
 
   - Undirected
     - In Facebook, a friend is connected to another friend. So it's a undirected relation.<br>
-    <img src="http://urily.sohammondal.com/FS1JINAGi" height="60" weight="60">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Undirected.svg/375px-Undirected.svg.png" height="60" weight="60">
   
 - Weighted
   - Unweighted - An unweighted graph is one in which an edge does not have any cost or weight associated with it.<br>
-    <img src="http://urily.sohammondal.com/0LcaXT-lX" height="200" weight="200">
+    <img src="https://i.stack.imgur.com/mPzx7.gif" height="200" weight="200">
   - Weighted - A weighted graph is one in which an edge has a cost or weight associated with it.<br> 
-    <img src="http://urily.sohammondal.com/vXNEjc4F0" height="200" weight="200">
+    <img src="https://ucarecdn.com/a67cb888-aa0c-424b-8c7f-847e38dd5691/" height="200" weight="200">
   - Now both of these can be either Directed or Undirected Graph too.
   - Example - <br>
     A road map with vertices as cities and any edge from City1 to City2 denoting if there is a direct route between them. The weight on each edge will denote the distance between the two cities.
 
     Now, if you are only concerned with the connectivity information between any two cities and not the distance between them then you can abstract the weight and hence it will become an unweighted graph.
 - Cyclic and Acyclic<br>
-  <img src="http://urily.sohammondal.com/tCaL12tcF">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Undirected_6_cycle.svg/1200px-Undirected_6_cycle.svg.png" height="150" weight="150">
   - A cyclic graph is a graph containing at least one graph cycle.
   - A graph that is not cyclic is said to be acyclic.
