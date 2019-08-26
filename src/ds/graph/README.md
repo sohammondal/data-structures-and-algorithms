@@ -1,4 +1,5 @@
-# GRAPH <img src="http://assets.stickpng.com/thumbs/5847fb2dcef1014c0b5e48d5.png" height="25" width="25">
+<h1>GRAPH <img src="https://img.icons8.com/color/48/000000/graph-clique.png" height="30" width="30"/> </h1>
+
 
 - A non-linear data structure
 - Has a set of values that are related in a pair-wise fashion.
