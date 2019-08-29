@@ -52,6 +52,10 @@ export class Queue {
       const temp = this.first.value;
       this.first = this.first.next;
       this.length--;
+      if (this.length === 0) {
+        // if last element dequeued
+        this.last = null; // change last to null
+      }
       return temp;
     } else {
       throw new Error("Cannot dequeue an empty queue");
