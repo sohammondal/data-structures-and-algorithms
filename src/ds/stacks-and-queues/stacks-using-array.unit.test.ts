@@ -1,4 +1,4 @@
-import { Stack } from "./stacks-using-arrays";
+import { Stack } from "./stacks-using-array";
 
 describe("Testing Stacks using Arrays", () => {
   const myStack = new Stack();
