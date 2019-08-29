@@ -48,6 +48,6 @@ export class Stack {
     return temp;
   }
   isEmpty() {
-    return this.length === 0 ? true : false;
+    return this.length === 0;
   }
 }
