@@ -113,7 +113,6 @@ function fact(n)
 ```
 - Memory is de-allocated and the process continues.
 - Result is returned as 6
-- 
 <br>
 
 <blockquote><i>Any problem that can be solved recursively can also be solved through the use of iteration.<i></blockquote>
