@@ -6,7 +6,8 @@
   "jest": true,
   "scripts": {
     "start": "tsc -b tsconfig.json -w .",
-    "test": "jest --watch"
+    "test:dev": "jest --watch",
+    "test": "jest"
   },
   "keywords": [
     "data structures",
